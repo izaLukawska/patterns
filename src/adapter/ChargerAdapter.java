@@ -9,6 +9,7 @@ public class ChargerAdapter implements USB_C_Charger{
     }
     @Override
     public void charge() {
+        iPhone14.charge();
         System.out.println("Charging lightening iPhone by USB C.");
     }
 }
