@@ -52,6 +52,17 @@ public class Car {
         this.engine = engine;
     }
 
+    @Override
+    public String toString() {
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                ", type='" + type + '\'' +
+                ", model='" + model + '\'' +
+                ", color='" + color + '\'' +
+                ", engine=" + engine +
+                '}';
+    }
+
     public static class CarBuilder{
         private Car car = new Car();
         public static CarBuilder builder(){return new CarBuilder();}
@@ -84,16 +95,5 @@ public class Car {
             return car;
         }
 
-    }
-
-    @Override
-    public String toString() {
-        return "Car{" +
-                "brand='" + brand + '\'' +
-                ", type='" + type + '\'' +
-                ", model='" + model + '\'' +
-                ", color='" + color + '\'' +
-                ", engine=" + engine +
-                '}';
     }
 }
